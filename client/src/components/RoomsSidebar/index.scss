@@ -1,0 +1,32 @@
+.rooms-sidebar {
+  display: flex;
+  flex-direction: column;
+
+  .create-room {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+
+    input {
+      border-radius: 10px;
+      padding: 2px;
+      width: 70%;
+      margin: auto;
+      height: 40px;
+      font-size: 16px;
+    }
+
+    button {
+      margin: 10px auto;
+      width: 70%;
+      border-radius: 10px;
+    }
+  }
+
+  .room-list {
+    height: 80%;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../styles/theme.scss';
+
+.conversation {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .label {
+    color: $label-color;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+  }
+}

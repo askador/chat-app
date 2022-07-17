@@ -1,0 +1,43 @@
+@import "../../styles/theme.scss";
+
+.user-list {
+  height: 100%;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .label {
+    color: $label-color;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+  }
+
+  .users {
+    display: block;
+    border: 4px solid $section-border-color;
+    border-radius: 10px;
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    overflow-y: scroll;
+
+    /* scroll width */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* scroll track */
+    &::-webkit-scrollbar-track {
+      border: solid 3px transparent;
+      border-radius: 15px;
+    }
+
+    /* scroll thumb */
+    &::-webkit-scrollbar-thumb {
+      background: $messages-scrollbar-thumb;
+      border-radius: 15px;
+    }
+  }
+
+}

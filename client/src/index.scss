@@ -1,0 +1,14 @@
+@import 'antd/dist/antd.css';
+@import './styles/theme.scss';
+
+body {
+  background: $bg;
+  background-size: 100%;
+}
+
+body, html, #root {
+  margin: 0;
+  height: 100%;
+  font-family: 'Franklin Gothic Light';
+  overflow: hidden;
+}

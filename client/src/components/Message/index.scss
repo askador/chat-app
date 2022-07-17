@@ -1,0 +1,52 @@
+@import "../../styles/theme.scss";
+
+.message {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  .bubble {
+    min-width: 70px;
+    max-width: 420px;
+    float: left;
+    background: $message-bg-color;
+    border-radius: 12px 12px 12px 0px;
+    padding: 8px;
+    padding-bottom: 0px;
+  }
+
+  &.is-me {
+    justify-self: flex-end;
+    margin-left: -10px;
+
+    .bubble {
+      float: right;
+      background: $message-is-me-bg;
+      border-radius: 12px 12px 0px 12px;
+    }
+  }
+
+  .name {
+    // color: rgb(0, 231, 239);
+    color: $message-name-color;
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  .text {
+    color: $message-text-color;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 2px;
+    word-wrap: break-word;
+  }
+
+  .date {
+    display: flex;
+    justify-content: flex-end;
+    color: $message-text-color;
+    font-size: 12px;
+    margin-top: -10px;
+  }
+}

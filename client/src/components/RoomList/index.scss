@@ -1,0 +1,54 @@
+@import "../../styles/theme.scss";
+
+.room-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .label {
+    color: $label-color;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+  }
+
+  .list {
+    display: block;
+    border: 4px solid $section-border-color;
+    border-radius: 10px;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    overflow-y: scroll;
+
+    .is-empty {
+      text-align: center;
+      font-size: large;
+      color: $text;
+    }
+
+    /* scroll width */
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* scroll track */
+    &::-webkit-scrollbar-track {
+      border: solid 3px transparent;
+      border-radius: 15px;
+    }
+
+    /* scroll thumb */
+    &::-webkit-scrollbar-thumb {
+      background: $messages-scrollbar-thumb;
+      border-radius: 15px;
+    }
+  }
+
+  button {
+    margin: 20px;
+    width: 85%;
+    border-radius: 10px;
+  }
+}

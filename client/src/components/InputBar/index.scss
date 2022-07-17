@@ -1,0 +1,33 @@
+@import '../../styles/theme.scss';
+
+.input-bar {
+  display: flex;
+  width: 90%;
+
+  .message-input {
+    background: $chat-textarea-bg;
+    border: none;
+    border-radius: 10px;
+    outline: none!important;
+    resize: none;
+    color: $text;
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+    line-height: 17px;
+    padding: 5px;
+
+    /* scroll width */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  button {
+    border-radius: 10px;
+    height: 40px;
+    margin: 10px;
+    font-size: 14px;
+  }
+  
+}

@@ -1,0 +1,19 @@
+@import '../../styles/theme.scss';
+
+.rooms {
+  display: flex;
+  background: $window-bg;
+  border-radius: 10px;
+  width: 960px;
+  height: 580px;
+  margin: 100px auto;
+
+  .conversation {
+    width: 70%;
+  }
+
+  .rooms-sidebar {
+    width: 30%;
+  }
+
+}

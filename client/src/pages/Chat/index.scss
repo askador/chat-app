@@ -1,0 +1,29 @@
+@import '../../styles/theme.scss';
+
+.container {
+  display: flex;
+  background: $window-bg;
+  border-radius: 10px;
+  width: 960px;
+  height: 580px;
+  margin: 100px auto;
+
+  .chat {
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .conversation {
+      height: 88%;
+    }
+
+  }
+
+  .chat-sidebar {
+    width: 24%;
+    height: 100%;
+  }
+
+
+}
