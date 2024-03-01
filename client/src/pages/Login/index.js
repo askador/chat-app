@@ -20,7 +20,7 @@ const Login = ({onLogin}) => {
 
   const onEnter = () => {
     if (!userName) {
-      return alert('Введите свое имя');
+      return alert('Enter your name');
     }
     setLoading(true)
     socket.emit('setUserName', userName)
@@ -48,14 +48,14 @@ const Login = ({onLogin}) => {
     <div className='login'>
       <input
         type="text"
-        placeholder="Ваше имя"
+        placeholder="Your name"
         maxLength={16}
         value={userName}
         onChange={(e) => setUserName(e.target.value)}
         onKeyDown={onKeyDown}
       />
       <Button disabled={isLoading} onClick={onEnter} variant='primary'>
-        {isLoading ? 'ВХОД...' : 'ВОЙТИ'}
+        {isLoading ? 'JOINING...' : 'JOIN'}
       </Button>
     </div>
   )

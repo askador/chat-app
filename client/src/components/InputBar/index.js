@@ -29,7 +29,7 @@ const InputBar = ({userName, roomId}) => {
         autoFocus={true}
         type="text" 
         className="message-input" 
-        placeholder="Введите сообщение..." 
+        placeholder="Input your message..." 
         onKeyDown={onKeyDown}
         onChange={(e) => setMessage(e.target.value)}
         value={message}
@@ -39,7 +39,7 @@ const InputBar = ({userName, roomId}) => {
         tabIndex={0} 
         type='submit' 
         onClick={sendMessage}
-      >Отправить</Button>
+      >Send</Button>
     </div>
   )
 }

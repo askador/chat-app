@@ -33,17 +33,17 @@ const RoomList = ({ onRoomChoose }) => {
 
   return (
     <div className="room-list">
-      <div className="label">Список комнат</div>
+      <div className="label">Room list</div>
       <div className="list">
         {
           rooms.length === 0 ? 
-          (<div className="is-empty">Пусто</div>) : 
+          (<div className="is-empty">Empty</div>) : 
           (rooms.map(room => (
             <RoomItem key={room.id} id={room.id} title={room.title} isActive={room.id === currenRoomId} onClick={onRoomClick}/>
           )))
         }
       </div>
-      <Button onClick={onEnterRoom}>Присоединиться</Button>
+      <Button onClick={onEnterRoom}>Join</Button>
     </div>
   )
 }

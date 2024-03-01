@@ -17,11 +17,11 @@ const ChatSidebar = ({userName, roomId}) => {
   return (
     <div className='chat-sidebar'>
       <div className='current-user'>
-        <div className='filler'>Вы вошли под пользователем</div>
+        <div className='filler'>Your name:</div>
         <div className='name'>{userName}</div>
       </div>
       <UserList roomId={roomId}/>
-      <Button variant='danger' onClick={onLeave}>Выйти</Button>
+      <Button variant='danger' onClick={onLeave}>Leave</Button>
     </div>
   )  
 }

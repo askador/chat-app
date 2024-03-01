@@ -17,7 +17,7 @@ const UserList = ({roomId}) => {
 
   return (
     <div className="user-list">
-      <div className="label">Список участников</div>
+      <div className="label">Participants</div>
       <div className="users">
         {users.map(user => (
           <UserItem key={user.id} user={user}/>

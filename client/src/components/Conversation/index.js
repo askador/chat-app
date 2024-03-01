@@ -6,7 +6,7 @@ const Conversation = ({userName}) => {
 
   return (
     <div className="conversation">
-      <div className="label">Разговор пользователей</div>
+      <div className="label">Conversation</div>
       <Messages userName={userName}/>
     </div>
   )

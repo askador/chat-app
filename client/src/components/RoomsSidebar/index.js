@@ -36,13 +36,13 @@ const RoomsSidebar = ({ onRoomChoose }) => {
       <div className="create-room">
         <input
           type="text"
-          placeholder="Название комнаты"
+          placeholder="Room name"
           value={createRoomTitle}
           onChange={onCreateRoomTitleChange}
           maxLength={16}
         />
         <Button variant="success" onClick={onCreateRoom}>
-          Создать комнату
+          Create room
         </Button>
       </div>
       <RoomList onRoomChoose={onRoomChoose} />
